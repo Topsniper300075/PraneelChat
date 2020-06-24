@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182EBBCF24A0B47400111463 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182EBBCE24A0B47400111463 /* Extensions.swift */; };
+		182EBBD324A35DE400111463 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 182EBBD224A35DE400111463 /* GoogleService-Info.plist */; };
+		182EBBD524A37E2400111463 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182EBBD424A37E2400111463 /* DatabaseManager.swift */; };
 		18C27CDF249CCDE500685DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C27CDE249CCDE500685DED /* AppDelegate.swift */; };
 		18C27CE1249CCDE500685DED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C27CE0249CCDE500685DED /* SceneDelegate.swift */; };
 		18C27CE3249CCDE500685DED /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C27CE2249CCDE500685DED /* ConversationsViewController.swift */; };
@@ -19,9 +22,14 @@
 		18C27CFF249CD0E400685DED /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C27CFE249CD0E400685DED /* VideoPlayerViewController.swift */; };
 		18C27D01249CD10300685DED /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C27D00249CD10300685DED /* NewConversationViewController.swift */; };
 		18C27D03249CD11300685DED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C27D02249CD11300685DED /* ProfileViewController.swift */; };
+		5CCC01AA39A562B439405AD0 /* Pods_PraneelChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059259C127BCD2839CBA45E0 /* Pods_PraneelChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		059259C127BCD2839CBA45E0 /* Pods_PraneelChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PraneelChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		182EBBCE24A0B47400111463 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		182EBBD224A35DE400111463 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		182EBBD424A37E2400111463 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		18C27CDB249CCDE500685DED /* PraneelChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PraneelChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C27CDE249CCDE500685DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C27CE0249CCDE500685DED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +44,8 @@
 		18C27CFE249CD0E400685DED /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		18C27D00249CD10300685DED /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		18C27D02249CD11300685DED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		81A834DFC7418141B17B9491 /* Pods-PraneelChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PraneelChat.debug.xcconfig"; path = "Target Support Files/Pods-PraneelChat/Pods-PraneelChat.debug.xcconfig"; sourceTree = "<group>"; };
+		A81A81B730C31EACAD18670E /* Pods-PraneelChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PraneelChat.release.xcconfig"; path = "Target Support Files/Pods-PraneelChat/Pods-PraneelChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CCC01AA39A562B439405AD0 /* Pods_PraneelChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +65,8 @@
 			children = (
 				18C27CDD249CCDE500685DED /* PraneelChat */,
 				18C27CDC249CCDE500685DED /* Products */,
+				FD8174A680E65D00C9A0A113 /* Pods */,
+				19FCACBDF2291F61DDAA578F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +81,7 @@
 		18C27CDD249CCDE500685DED /* PraneelChat */ = {
 			isa = PBXGroup;
 			children = (
+				182EBBD224A35DE400111463 /* GoogleService-Info.plist */,
 				18C27CF6249CCF7800685DED /* Resources */,
 				18C27CF5249CCF6C00685DED /* ViewModels */,
 				18C27CF4249CCF6500685DED /* Models */,
@@ -82,8 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				18C27CE2249CCDE500685DED /* ConversationsViewController.swift */,
-				18C27CF8249CD0AB00685DED /* LoginViewController.swift */,
-				18C27CFA249CD0BB00685DED /* RegisterViewController.swift */,
+				18C27D04249CF85D00685DED /* Login */,
 				18C27CFC249CD0D800685DED /* PhotoViewerViewController.swift */,
 				18C27CFE249CD0E400685DED /* VideoPlayerViewController.swift */,
 				18C27D00249CD10300685DED /* NewConversationViewController.swift */,
@@ -120,6 +133,8 @@
 			children = (
 				18C27CDE249CCDE500685DED /* AppDelegate.swift */,
 				18C27CE0249CCDE500685DED /* SceneDelegate.swift */,
+				182EBBCE24A0B47400111463 /* Extensions.swift */,
+				182EBBD424A37E2400111463 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -133,6 +148,32 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		18C27D04249CF85D00685DED /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				18C27CF8249CD0AB00685DED /* LoginViewController.swift */,
+				18C27CFA249CD0BB00685DED /* RegisterViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		19FCACBDF2291F61DDAA578F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				059259C127BCD2839CBA45E0 /* Pods_PraneelChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD8174A680E65D00C9A0A113 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81A834DFC7418141B17B9491 /* Pods-PraneelChat.debug.xcconfig */,
+				A81A81B730C31EACAD18670E /* Pods-PraneelChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18C27CEF249CCDE700685DED /* Build configuration list for PBXNativeTarget "PraneelChat" */;
 			buildPhases = (
+				CBC5EDAA870E51080D3E7EDF /* [CP] Check Pods Manifest.lock */,
 				18C27CD7249CCDE500685DED /* Sources */,
 				18C27CD8249CCDE500685DED /* Frameworks */,
 				18C27CD9249CCDE500685DED /* Resources */,
+				92B20E893E67032B4BA1CCFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C27CEB249CCDE700685DED /* LaunchScreen.storyboard in Resources */,
+				182EBBD324A35DE400111463 /* GoogleService-Info.plist in Resources */,
 				18C27CE8249CCDE700685DED /* Assets.xcassets in Resources */,
 				18C27CE6249CCDE500685DED /* Main.storyboard in Resources */,
 			);
@@ -199,16 +243,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		92B20E893E67032B4BA1CCFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PraneelChat/Pods-PraneelChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PraneelChat/Pods-PraneelChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PraneelChat/Pods-PraneelChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBC5EDAA870E51080D3E7EDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PraneelChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18C27CD7249CCDE500685DED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18C27CF9249CD0AB00685DED /* LoginViewController.swift in Sources */,
+				182EBBD524A37E2400111463 /* DatabaseManager.swift in Sources */,
 				18C27CFB249CD0BB00685DED /* RegisterViewController.swift in Sources */,
 				18C27D01249CD10300685DED /* NewConversationViewController.swift in Sources */,
 				18C27CE3249CCDE500685DED /* ConversationsViewController.swift in Sources */,
 				18C27CFF249CD0E400685DED /* VideoPlayerViewController.swift in Sources */,
+				182EBBCF24A0B47400111463 /* Extensions.swift in Sources */,
 				18C27CDF249CCDE500685DED /* AppDelegate.swift in Sources */,
 				18C27D03249CD11300685DED /* ProfileViewController.swift in Sources */,
 				18C27CE1249CCDE500685DED /* SceneDelegate.swift in Sources */,
@@ -354,6 +442,7 @@
 		};
 		18C27CF0249CCDE700685DED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A834DFC7418141B17B9491 /* Pods-PraneelChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -373,6 +462,7 @@
 		};
 		18C27CF1249CCDE700685DED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A81A81B730C31EACAD18670E /* Pods-PraneelChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
