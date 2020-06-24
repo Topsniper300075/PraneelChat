@@ -31,37 +31,37 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
     
     
     private let firstNameField: UITextField = {
-           let field = UITextField()
-           field.autocapitalizationType = .none
-           field.autocorrectionType = .no
-           field.returnKeyType = .continue
-           field.layer.cornerRadius = 12
-           field.layer.borderWidth = 1
-           field.layer.borderColor = UIColor.lightGray.cgColor
-           field.placeholder = "First Name..."
-           
-           field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
-           field.leftViewMode = .always
-           field.backgroundColor = .white
-           return field
-       }()
+        let field = UITextField()
+        field.autocapitalizationType = .none
+        field.autocorrectionType = .no
+        field.returnKeyType = .continue
+        field.layer.cornerRadius = 12
+        field.layer.borderWidth = 1
+        field.layer.borderColor = UIColor.lightGray.cgColor
+        field.placeholder = "First Name..."
+        
+        field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
+        field.leftViewMode = .always
+        field.backgroundColor = .white
+        return field
+    }()
     
     
     private let LastNameField: UITextField = {
-           let field = UITextField()
-           field.autocapitalizationType = .none
-           field.autocorrectionType = .no
-           field.returnKeyType = .continue
-           field.layer.cornerRadius = 12
-           field.layer.borderWidth = 1
-           field.layer.borderColor = UIColor.lightGray.cgColor
-           field.placeholder = "Last Name..."
-           
-           field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
-           field.leftViewMode = .always
-           field.backgroundColor = .white
-           return field
-       }()
+        let field = UITextField()
+        field.autocapitalizationType = .none
+        field.autocorrectionType = .no
+        field.returnKeyType = .continue
+        field.layer.cornerRadius = 12
+        field.layer.borderWidth = 1
+        field.layer.borderColor = UIColor.lightGray.cgColor
+        field.placeholder = "Last Name..."
+        
+        field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
+        field.leftViewMode = .always
+        field.backgroundColor = .white
+        return field
+    }()
     
     
     private let emailField: UITextField = {
@@ -114,11 +114,11 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         view.backgroundColor = .white
         
         //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register", style: .done,
-                                                          //  target: self,
-                                                        //    action: #selector(didTapRegister))
+        //  target: self,
+        //    action: #selector(didTapRegister))
         
         registerButton.addTarget(self, action: #selector(registerButtonTapped),
-                              for: .touchUpInside)
+                                 for: .touchUpInside)
         
         emailField.delegate = self
         passwordField.delegate = self
@@ -142,7 +142,7 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     @objc private func didTapChangeProfilePic() {
-     presentPhotoActionSheet()
+        presentPhotoActionSheet()
         
     }
     
@@ -159,13 +159,13 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         imageView.layer.cornerRadius = imageView.width/2.0
         
         firstNameField.frame = CGRect(x: 30 ,
-                                  y: imageView.bottom + 10,
-                                  width: scrollView.width-60,
-                                  height: 52)
+                                      y: imageView.bottom + 10,
+                                      width: scrollView.width-60,
+                                      height: 52)
         LastNameField.frame = CGRect(x: 30 ,
-                                  y: firstNameField.bottom + 10,
-                                  width: scrollView.width-60,
-                                  height: 52)
+                                     y: firstNameField.bottom + 10,
+                                     width: scrollView.width-60,
+                                     height: 52)
         emailField.frame = CGRect(x: 30 ,
                                   y: LastNameField.bottom + 10,
                                   width: scrollView.width-60,
@@ -175,9 +175,9 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
                                      width: scrollView.width-60,
                                      height: 52)
         registerButton.frame = CGRect(x: 30 ,
-                                   y: passwordField.bottom + 10,
-                                   width: scrollView.width-60,
-                                   height: 52)
+                                      y: passwordField.bottom + 10,
+                                      width: scrollView.width-60,
+                                      height: 52)
         
         
     }
@@ -187,7 +187,7 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         passwordField.resignFirstResponder()
         emailField.resignFirstResponder()
         firstNameField.resignFirstResponder()
-               LastNameField.resignFirstResponder()
+        LastNameField.resignFirstResponder()
         
         
         guard let firstName = firstNameField.text,
@@ -203,21 +203,23 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         }
         //Firebase Login
         DatabaseManager.shared.UserExists(with: email, completion: { [weak self] exists in
-           guard let strongSelf = self else {
-                          
-                              return
-                                     }
+            guard let strongSelf = self else {
+                
+                return
+            }
             guard !exists else {
                 //user already exist
                 strongSelf.alertUserLoginError(message: "A user account for that email address already exists :(")
                 return
             }
             FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
-               guard authResult != nil, error == nil else {
+                guard authResult != nil, error == nil else {
                     print("Error Creating User")
                     return
                 }
-                DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firstName, lastName: lastName, emailAddress: email))
+                DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firstName,
+                                                                    lastName: lastName,
+                                                                    emailAddress: email))
                 
                 strongSelf.navigationController?.dismiss(animated: true, completion: nil)
                 
@@ -225,7 +227,7 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         })
         
         
-
+        
         
     }
     
@@ -258,7 +260,7 @@ extension RegisterViewController: UITextFieldDelegate {
         }
         return true
     }
-
+    
 }
 
 extension RegisterViewController: UIImagePickerControllerDelegate {
@@ -273,7 +275,7 @@ extension RegisterViewController: UIImagePickerControllerDelegate {
         actionSheet.addAction(UIAlertAction(title: "Take Photo",
                                             style: .default,
                                             handler: {[weak self] _ in
-                                                 self?.presentCamera()
+                                                self?.presentCamera()
         }))
         
         actionSheet.addAction(UIAlertAction(title: "Choose Photo",
