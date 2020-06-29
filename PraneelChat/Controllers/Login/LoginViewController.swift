@@ -152,7 +152,7 @@ class LoginViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Dismiss",
                                       style: .cancel, handler: nil))
         present(alert, animated: true)
-    }
+    }   
     
     @objc private func didTapRegister() {
         let vc = RegisterViewController()
