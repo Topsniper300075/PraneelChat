@@ -11,4 +11,7 @@ pod 'Firebase/Database'
 
   # Pods for PraneelChat
 
+
+pod 'FBSDKLoginKit'
+    
 end
