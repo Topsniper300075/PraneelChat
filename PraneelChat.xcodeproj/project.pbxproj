@@ -10,6 +10,8 @@
 		182EBBCF24A0B47400111463 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182EBBCE24A0B47400111463 /* Extensions.swift */; };
 		182EBBD324A35DE400111463 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 182EBBD224A35DE400111463 /* GoogleService-Info.plist */; };
 		182EBBD524A37E2400111463 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182EBBD424A37E2400111463 /* DatabaseManager.swift */; };
+		188B779C24AB438100AFEF15 /* PingPongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B779B24AB438100AFEF15 /* PingPongViewController.swift */; };
+		188B779E24AB4A3000AFEF15 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B779D24AB4A3000AFEF15 /* GamesViewController.swift */; };
 		18C27CDF249CCDE500685DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C27CDE249CCDE500685DED /* AppDelegate.swift */; };
 		18C27CE1249CCDE500685DED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C27CE0249CCDE500685DED /* SceneDelegate.swift */; };
 		18C27CE3249CCDE500685DED /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C27CE2249CCDE500685DED /* ConversationsViewController.swift */; };
@@ -30,6 +32,8 @@
 		182EBBCE24A0B47400111463 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		182EBBD224A35DE400111463 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		182EBBD424A37E2400111463 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		188B779B24AB438100AFEF15 /* PingPongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingPongViewController.swift; sourceTree = "<group>"; };
+		188B779D24AB4A3000AFEF15 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		18C27CDB249CCDE500685DED /* PraneelChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PraneelChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C27CDE249CCDE500685DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C27CE0249CCDE500685DED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188B779A24AB435600AFEF15 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				188B779D24AB4A3000AFEF15 /* GamesViewController.swift */,
+				188B779B24AB438100AFEF15 /* PingPongViewController.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
 		18C27CD2249CCDE500685DED = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,7 @@
 		18C27CDD249CCDE500685DED /* PraneelChat */ = {
 			isa = PBXGroup;
 			children = (
+				188B779A24AB435600AFEF15 /* Games */,
 				182EBBD224A35DE400111463 /* GoogleService-Info.plist */,
 				18C27CF6249CCF7800685DED /* Resources */,
 				18C27CF5249CCF6C00685DED /* ViewModels */,
@@ -296,8 +310,10 @@
 				18C27D01249CD10300685DED /* NewConversationViewController.swift in Sources */,
 				18C27CE3249CCDE500685DED /* ConversationsViewController.swift in Sources */,
 				18C27CFF249CD0E400685DED /* VideoPlayerViewController.swift in Sources */,
+				188B779C24AB438100AFEF15 /* PingPongViewController.swift in Sources */,
 				182EBBCF24A0B47400111463 /* Extensions.swift in Sources */,
 				18C27CDF249CCDE500685DED /* AppDelegate.swift in Sources */,
+				188B779E24AB4A3000AFEF15 /* GamesViewController.swift in Sources */,
 				18C27D03249CD11300685DED /* ProfileViewController.swift in Sources */,
 				18C27CE1249CCDE500685DED /* SceneDelegate.swift in Sources */,
 				18C27CFD249CD0D800685DED /* PhotoViewerViewController.swift in Sources */,
